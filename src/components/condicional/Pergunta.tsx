@@ -1,7 +1,12 @@
 import Faq from "@/components/condicional/Faq";
 import { useState } from "react";
 
-export default function Pergunta() {
+interface PerguntaProps {
+    texto: string
+    resposta: string
+}
+
+export default function Pergunta(props: PerguntaProps) {
 
     const [aberta, setAberta] = useState<boolean>(false)
 
@@ -12,11 +17,11 @@ export default function Pergunta() {
         `}>
             <div className="bg-zinc-700 p-5 cursor-pointer select-none"
                 onClick={() => setAberta(!aberta)}>
-                Pergunta
+                {props.texto}
             </div>
             {aberta && (
                 <div className="p-5">
-                    Resposta
+                    {props.resposta}
                 </div>
             )}
 
