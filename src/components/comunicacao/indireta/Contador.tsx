@@ -17,7 +17,7 @@ export default function Contador() {
         <div
             className={`
             flex flex-col p-2 w-72 h-72
-            border border-zinc-800 rounded-lg
+            border border-zinc-400 rounded-lg
         `}
         >
             <Display valor={num} />

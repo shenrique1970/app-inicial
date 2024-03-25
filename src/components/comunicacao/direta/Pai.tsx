@@ -1,8 +1,8 @@
 import Filho from "./Filho";
 
 interface PaiProps {
-    nome: String
-    snome: string
+    nome: string
+    sobrenome: string
 }
 
 export default function Pai(props: PaiProps) {
@@ -12,13 +12,15 @@ export default function Pai(props: PaiProps) {
             bg-blue-500 text-white border border-white
             rounded-md p-5
         `}>
-            <div className="flex justify-center gap-2 text-2xl">
-                <span className="font-black">Pai</span>
+            <div className='flex justify-center gap-2 text-xl'>
+                <span className='font-black'>Pai</span>
                 <span>{props.nome}</span>
-                <span>{props.snome}</span>
+                <span>{props.sobrenome}</span>
             </div>
-            <Filho nome="Maria" snome={props.snome} />
-            <Filho nome="Rose" snome={props.snome} />
+            <div className='flex gap-5'>
+                <Filho nome="Julia" sobrenome={props.sobrenome} />
+                <Filho nome="Amanda" sobrenome={props.sobrenome} />
+            </div>
         </div>
     )
 }
