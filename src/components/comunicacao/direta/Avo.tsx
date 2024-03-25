@@ -15,14 +15,15 @@ export default function Avo(props: AvoProps) {
             border border-gray
             bg-purple-500 text-white 
         `}>
-            <div className="flex justify-center gap-2">
+            <div className="flex justify-center gap-2 text-2xl">
+                <span className="font-black">Avô</span>
                 <span>{props.nome}</span>
                 <span>{props.snome}</span>
             </div>
             <div className="flex gap-5">
-                <Pai />
-                <Pai />
-                <Pai />
+                <Pai nome="Sebastião" snome={props.snome}/>
+                <Pai nome="Mauro" snome={props.snome}/>
+                <Pai nome="Luis" snome={props.snome} />
             </div>
 
         </div>
