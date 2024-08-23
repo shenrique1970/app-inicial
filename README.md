@@ -74,3 +74,7 @@ package.json
     "react-dom": "^18",
     "next": "13.1.0" <-------------------------
   },
+
+
+npm install cross-env
+npm install
