@@ -22,6 +22,24 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+npx create-next-app@latest my-app-name
+
+
+
+Would you like to use TypeScript? / Yes
+Would you like to use ESLint? / Yes
+Would you like to use Tailwind CSS? / Yes
+Would you like to use `src/` directory? / Yes
+Would you like to use App Router? (recommended) No 
+Would you like to customize the default import alias (@/*)? No
+
+package.json
+ "dependencies": {
+    "react": "^18", <-------------------------
+    "react-dom": "^18",
+    "next": "13.1.0" <-------------------------
+  },
+
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
